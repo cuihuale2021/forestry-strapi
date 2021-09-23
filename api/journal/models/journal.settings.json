@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Journal",
+  "info": {
+    "name": "Journal",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "author": {
+      "type": "string",
+      "unique": false
+    },
+    "date": {
+      "type": "date",
+      "unique": false,
+      "default": "2021-09-23T04:00:00.000Z"
+    },
+    "content": {
+      "type": "richtext",
+      "unique": false
+    },
+    "timeToRead": {
+      "type": "string",
+      "unique": false
+    },
+    "excerpt": {
+      "type": "text",
+      "unique": false
+    }
+  }
+}

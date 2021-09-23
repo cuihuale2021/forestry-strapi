@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "name": "projects",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "date",
+      "required": true,
+      "unique": false,
+      "default": "2021-09-16T04:00:00.000Z"
+    },
+    "thumbnail": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "content": {
+      "type": "richtext",
+      "unique": false
+    },
+    "pbc": {
+      "type": "richtext",
+      "default": "\"ccc\""
+    },
+    "pfc": {
+      "type": "richtext"
+    }
+  }
+}

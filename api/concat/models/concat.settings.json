@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Concat",
+  "info": {
+    "name": "Concat"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "username": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "message": {
+      "type": "text"
+    }
+  }
+}
